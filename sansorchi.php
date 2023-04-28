@@ -99,7 +99,7 @@ class BinaryStream
           //  throw new Exception\UnderflowException('Buffer underrun at needle position: ' . $this->_needle . ' while requesting length: 1');
         }
 
-        return ord($this->_stream{$this->_needle++});
+        return ord($this->_stream[$this->_needle++]);
     }
 
     /**
